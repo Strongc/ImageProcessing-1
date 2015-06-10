@@ -5,6 +5,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProImage_remap_fun", "ProIm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProImage_SURF_Fun", "ProImage_SURF_Fun\ProImage_SURF_Fun.vcxproj", "{C5AF7FAD-96AA-40FF-A7B7-776A9080A46D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProImage_ORI_Fun", "ProImage_Meanshift_Fun\ProImage_Meanshift_Fun.vcxproj", "{A511D5A1-B2F7-4AF8-A580-BC3FE6B05B04}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProImage_PyrSegmentation_Fun", "ProImage_PyrSegmentation_Fun\ProImage_PyrSegmentation_Fun.vcxproj", "{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +23,14 @@ Global
 		{C5AF7FAD-96AA-40FF-A7B7-776A9080A46D}.Debug|Win32.Build.0 = Debug|Win32
 		{C5AF7FAD-96AA-40FF-A7B7-776A9080A46D}.Release|Win32.ActiveCfg = Release|Win32
 		{C5AF7FAD-96AA-40FF-A7B7-776A9080A46D}.Release|Win32.Build.0 = Release|Win32
+		{A511D5A1-B2F7-4AF8-A580-BC3FE6B05B04}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A511D5A1-B2F7-4AF8-A580-BC3FE6B05B04}.Debug|Win32.Build.0 = Debug|Win32
+		{A511D5A1-B2F7-4AF8-A580-BC3FE6B05B04}.Release|Win32.ActiveCfg = Release|Win32
+		{A511D5A1-B2F7-4AF8-A580-BC3FE6B05B04}.Release|Win32.Build.0 = Release|Win32
+		{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}.Debug|Win32.Build.0 = Debug|Win32
+		{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}.Release|Win32.ActiveCfg = Release|Win32
+		{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
