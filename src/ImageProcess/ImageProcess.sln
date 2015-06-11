@@ -9,6 +9,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProImage_ORI_Fun", "ProImag
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProImage_PyrSegmentation_Fun", "ProImage_PyrSegmentation_Fun\ProImage_PyrSegmentation_Fun.vcxproj", "{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_ZFCompare_fun", "Proimage_ZFCompare_fun\Proimage_ZFCompare_fun.vcxproj", "{4BB63890-7516-4007-90E6-685ECE0FAF90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_ZFHistMatch_fun", "Proimage_ZFHistMatch_fun\Proimage_ZFHistMatch_fun.vcxproj", "{51A16CF0-C1F1-4720-A5DA-40B4E5C3DCA9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_floodfill_fun", "Proimage_floodfill_fun\Proimage_floodfill_fun.vcxproj", "{778297A2-8D82-4DFB-B2FC-FF0E3FBA653B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_FeatureDetector_fun", "Proimage_FeatureDetector_fun\Proimage_FeatureDetector_fun.vcxproj", "{8B43C81D-E785-4666-A553-52F22ABAA303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +39,22 @@ Global
 		{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}.Debug|Win32.Build.0 = Debug|Win32
 		{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}.Release|Win32.ActiveCfg = Release|Win32
 		{BA77B6A1-BA25-45FC-B819-9FE2F934B27D}.Release|Win32.Build.0 = Release|Win32
+		{4BB63890-7516-4007-90E6-685ECE0FAF90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4BB63890-7516-4007-90E6-685ECE0FAF90}.Debug|Win32.Build.0 = Debug|Win32
+		{4BB63890-7516-4007-90E6-685ECE0FAF90}.Release|Win32.ActiveCfg = Release|Win32
+		{4BB63890-7516-4007-90E6-685ECE0FAF90}.Release|Win32.Build.0 = Release|Win32
+		{51A16CF0-C1F1-4720-A5DA-40B4E5C3DCA9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{51A16CF0-C1F1-4720-A5DA-40B4E5C3DCA9}.Debug|Win32.Build.0 = Debug|Win32
+		{51A16CF0-C1F1-4720-A5DA-40B4E5C3DCA9}.Release|Win32.ActiveCfg = Release|Win32
+		{51A16CF0-C1F1-4720-A5DA-40B4E5C3DCA9}.Release|Win32.Build.0 = Release|Win32
+		{778297A2-8D82-4DFB-B2FC-FF0E3FBA653B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{778297A2-8D82-4DFB-B2FC-FF0E3FBA653B}.Debug|Win32.Build.0 = Debug|Win32
+		{778297A2-8D82-4DFB-B2FC-FF0E3FBA653B}.Release|Win32.ActiveCfg = Release|Win32
+		{778297A2-8D82-4DFB-B2FC-FF0E3FBA653B}.Release|Win32.Build.0 = Release|Win32
+		{8B43C81D-E785-4666-A553-52F22ABAA303}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8B43C81D-E785-4666-A553-52F22ABAA303}.Debug|Win32.Build.0 = Debug|Win32
+		{8B43C81D-E785-4666-A553-52F22ABAA303}.Release|Win32.ActiveCfg = Release|Win32
+		{8B43C81D-E785-4666-A553-52F22ABAA303}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
