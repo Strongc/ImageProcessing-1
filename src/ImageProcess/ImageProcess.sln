@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_FeatureDetector_fu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_BackgroundSubtractorMOG_fun", "Proimage_BackgroundSubtractorMOG_fun\Proimage_BackgroundSubtractorMOG_fun.vcxproj", "{9EA1F063-663D-4FE2-8E84-01CE4FBD7C9F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_GMM_1_alg", "Proimage_GMM_1_alg\Proimage_GMM_1_alg.vcxproj", "{823F1810-A039-4E34-92A8-BDF74EB1B8BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -61,6 +63,10 @@ Global
 		{9EA1F063-663D-4FE2-8E84-01CE4FBD7C9F}.Debug|Win32.Build.0 = Debug|Win32
 		{9EA1F063-663D-4FE2-8E84-01CE4FBD7C9F}.Release|Win32.ActiveCfg = Release|Win32
 		{9EA1F063-663D-4FE2-8E84-01CE4FBD7C9F}.Release|Win32.Build.0 = Release|Win32
+		{823F1810-A039-4E34-92A8-BDF74EB1B8BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{823F1810-A039-4E34-92A8-BDF74EB1B8BB}.Debug|Win32.Build.0 = Debug|Win32
+		{823F1810-A039-4E34-92A8-BDF74EB1B8BB}.Release|Win32.ActiveCfg = Release|Win32
+		{823F1810-A039-4E34-92A8-BDF74EB1B8BB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
