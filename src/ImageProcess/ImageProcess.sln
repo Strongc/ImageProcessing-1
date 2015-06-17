@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_GMM_1_alg", "Proim
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProImage_grabcut_fun", "ProImge_grabcut_fun\ProImge_grabcut_fun.vcxproj", "{89CE23C6-5A5B-4A50-A8DD-087D3EA5112B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_HoughLines_fun", "Proimage_HoughLines_fun\Proimage_HoughLines_fun.vcxproj", "{38187D2C-F0EB-4FF7-A2A8-3A1627A16BA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -73,6 +75,10 @@ Global
 		{89CE23C6-5A5B-4A50-A8DD-087D3EA5112B}.Debug|Win32.Build.0 = Debug|Win32
 		{89CE23C6-5A5B-4A50-A8DD-087D3EA5112B}.Release|Win32.ActiveCfg = Release|Win32
 		{89CE23C6-5A5B-4A50-A8DD-087D3EA5112B}.Release|Win32.Build.0 = Release|Win32
+		{38187D2C-F0EB-4FF7-A2A8-3A1627A16BA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38187D2C-F0EB-4FF7-A2A8-3A1627A16BA5}.Debug|Win32.Build.0 = Debug|Win32
+		{38187D2C-F0EB-4FF7-A2A8-3A1627A16BA5}.Release|Win32.ActiveCfg = Release|Win32
+		{38187D2C-F0EB-4FF7-A2A8-3A1627A16BA5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
