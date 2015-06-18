@@ -112,7 +112,7 @@ CvSeq* findSquares4( IplImage* img, CvMemStorage* storage )
 
 					// if 余弦值 足够小，可以认定角度为90度直角  
 					//cos0.1=83度，能较好的趋近直角  
-					if( s < 0.2 )    
+					if( s < 0.1 )    
 						for( i = 0; i < 4; i++ )  
 							cvSeqPush( squares,  
 							(CvPoint*)cvGetSeqElem( result, i ));  
@@ -160,7 +160,7 @@ void drawSquares( IplImage* img, CvSeq* squares )
 }  
 
 
-char* names[] = { "..\\..\\..\\source\\00_01_30_00.jpg", 0 };  
+char* names[] = { "..\\..\\..\\source\\00_01_48_00.jpg", 0 };  
 
 int main(int argc, char** argv)  
 {  
