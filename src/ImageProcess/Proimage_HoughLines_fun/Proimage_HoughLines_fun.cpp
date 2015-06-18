@@ -57,7 +57,7 @@ public:
 };  
 int _tmain(int argc, _TCHAR* argv[])
 {
-	cv::Mat image = cv::imread ("..\\..\\..\\source\\00_01_40_00.jpg");    
+	cv::Mat image = cv::imread ("..\\..\\..\\source\\00_01_48_00.jpg");    
 	cv::Mat result;  
 	cv::cvtColor (image,result,CV_BGRA2GRAY);  
 	cv::Mat contours;  
