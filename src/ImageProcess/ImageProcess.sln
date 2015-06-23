@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_HoughLinesP_fun", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_ZFcalcBack_fun", "Proimage_ZFcalcBack_fun\Proimage_ZFcalcBack_fun.vcxproj", "{D1860AAD-888A-4B81-AB34-CF576AD2FE66}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proimage_VideoDectLine_Project", "Proimage_VideoDectLine_Project\Proimage_VideoDectLine_Project.vcxproj", "{CE7F20A7-E502-40EF-91AB-A17DE053D7B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -127,6 +129,10 @@ Global
 		{D1860AAD-888A-4B81-AB34-CF576AD2FE66}.Debug|Win32.Build.0 = Debug|Win32
 		{D1860AAD-888A-4B81-AB34-CF576AD2FE66}.Release|Win32.ActiveCfg = Release|Win32
 		{D1860AAD-888A-4B81-AB34-CF576AD2FE66}.Release|Win32.Build.0 = Release|Win32
+		{CE7F20A7-E502-40EF-91AB-A17DE053D7B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE7F20A7-E502-40EF-91AB-A17DE053D7B5}.Debug|Win32.Build.0 = Debug|Win32
+		{CE7F20A7-E502-40EF-91AB-A17DE053D7B5}.Release|Win32.ActiveCfg = Release|Win32
+		{CE7F20A7-E502-40EF-91AB-A17DE053D7B5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
