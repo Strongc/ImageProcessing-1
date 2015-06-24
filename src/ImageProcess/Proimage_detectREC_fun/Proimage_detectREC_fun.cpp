@@ -65,7 +65,7 @@ CvSeq* findSquares4( IplImage* img, CvMemStorage* storage )
 			// Canny helps to catch squares with gradient shading    
 			if( l == 0 )  
 			{  
-				cvCanny( tgray, gray, 0, thresh, 5 );  
+				cvCanny( tgray, gray, 50, 150, 3 );  
 				cvShowImage("a1",gray);
 				//使用任意结构元素膨胀图像  
 				cvDilate( gray, gray, 0, 1 );
@@ -75,7 +75,6 @@ CvSeq* findSquares4( IplImage* img, CvMemStorage* storage )
 			{  
 				// apply threshold if l!=0:  
 				cvThreshold( tgray, gray, (l+1)*255/N, 255, CV_THRESH_BINARY ); 
-				cvShowImage("a",gray);
 			}  
 
 			// 找到所有轮廓并且存储在序列中  
@@ -160,7 +159,7 @@ void drawSquares( IplImage* img, CvSeq* squares )
 }  
 
 
-char* names[] = { "..\\..\\..\\source\\00_01_48_00.jpg", 0 };  
+char* names[] = { "..\\..\\..\\source\\00_00_01_00.jpg", 0 };  
 
 int main(int argc, char** argv)  
 {  
