@@ -58,7 +58,7 @@ public:
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	IplImage* pFrame = cvLoadImage("..\\..\\..\\source\\00_04_11_00.jpg");
+	IplImage* pFrame = cvLoadImage("..\\..\\..\\source\\00_01_30_001.jpg");
 	IplImage* img1 = cvCreateImage(cvGetSize(pFrame), IPL_DEPTH_8U, 1);//创建目标图像 
 	cvCvtColor(pFrame,img1,CV_BGR2GRAY);//cvCvtColor(src,des,CV_BGR2GRAY) 
 	//边缘检测   
@@ -84,12 +84,12 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cv::Mat image(pFrame);
 	LineFinder finder;  
-	finder.setMinVote (600);  
-	finder.setLineLengthAndGap (680,500);
+	finder.setMinVote (80);  
+	finder.setLineLengthAndGap (100,50);
 	std::vector<cv::Vec4i> li;
 	li = finder.findLines (contours); 
-	finder.drawDetectedLines (image); 
-	imshow("b",image);
+	//finder.drawDetectedLines (image); 
+	//imshow("b",image);
 	//imwrite("123.jpg",image);
 // 	cv::Mat image = cv::imread ("..\\..\\..\\source\\00_01_40_00.jpg");    
 // 	cv::Mat result;  
@@ -107,52 +107,52 @@ int _tmain(int argc, _TCHAR* argv[])
 // 	LineFinder finder;  
 // 	finder.setMinVote (80);  
 // 	finder.setLineLengthAndGap (100,20);
-// 	std::vector<cv::Vec4i> li;
-// 	li = finder.findLines (contours); 
-// 	//选择第一条直线 
-// 	//黑色的图像  
-// 	
-// 	for(int i = 0; i < li.size();i++)
-// 	{
-// 		int n= i;
-// 		cv::Mat oneLine(image.size(),CV_8U,cv::Scalar(0));  
-// 		cv::Mat oneLineInv;  
-// 		//白线  
-// 		line(oneLine,cv::Point(li[n][0],li[n][1]),cv::Point(li[n][2],li[n][3]),cv::Scalar(255),5);  
-// 		//将轮廓与白线按位与  
-// 		bitwise_and(contours,oneLine,oneLine); 		
-// 		threshold(oneLine,oneLineInv,128,255,cv::THRESH_BINARY_INV);  
-// 		imwrite("12.jpg",oneLine);
-// 		//把点集中的点插入到向量中  
-// 		std::vector<cv::Point> points;  
-// 		//遍历每个像素  
-// 		for(int y = 0; y < oneLine.rows;y++)  
-// 		{  
-// 			uchar* rowPtr = oneLine.ptr<uchar>(y);  
-// 			for(int x = 0;x < oneLine.cols;x++)  
-// 			{  
-// 				if(rowPtr[x])  
-// 				{  
-// 					points.push_back(cv::Point(x,y));  
-// 				}  
-// 			}  
-// 		}  
-// 		//储存拟合直线的容器  
-// 		cv::Vec4f line;  
-// 		//直线拟合函数  
-// 		fitLine(cv::Mat(points),line,CV_DIST_L12,0,0.01,0.01);  
-// 		//画一个线段  
-// 		int x0= line[2];  
-// 		int y0= line[3];  
-// 		int x1= x0-200*line[0];  
-// 		int y1= y0-200*line[1]; 
-// 		//if(y0 == y1 /*|| x0 == x1*/)
-// 		{
-// 			cv::line(image,cv::Point(x0,y0),cv::Point(x1,y1),cv::Scalar(0,255,0),1); 	
-// 			imwrite("123.jpg",image);
-// 		}
-// 	}
-// 	imshow("估计的直线",image); 
+//  	std::vector<cv::Vec4i> li;
+//  	li = finder.findLines (contours); 
+ 	//选择第一条直线 
+ 	//黑色的图像  
+ 	
+ 	for(int i = 0; i < li.size();i++)
+ 	{
+ 		int n= i;
+ 		cv::Mat oneLine(image.size(),CV_8U,cv::Scalar(0));  
+ 		cv::Mat oneLineInv;  
+ 		//白线  
+ 		line(oneLine,cv::Point(li[n][0],li[n][1]),cv::Point(li[n][2],li[n][3]),cv::Scalar(255),5);  
+ 		//将轮廓与白线按位与  
+ 		bitwise_and(contours,oneLine,oneLine); 		
+ 		threshold(oneLine,oneLineInv,128,255,cv::THRESH_BINARY_INV);  
+ 		imwrite("12.jpg",oneLine);
+ 		//把点集中的点插入到向量中  
+ 		std::vector<cv::Point> points;  
+ 		//遍历每个像素  
+ 		for(int y = 0; y < oneLine.rows;y++)  
+ 		{  
+ 			uchar* rowPtr = oneLine.ptr<uchar>(y);  
+ 			for(int x = 0;x < oneLine.cols;x++)  
+ 			{  
+ 				if(rowPtr[x])  
+ 				{  
+ 					points.push_back(cv::Point(x,y));  
+ 				}  
+ 			}  
+ 		}  
+ 		//储存拟合直线的容器  
+ 		cv::Vec4f line;  
+ 		//直线拟合函数  
+ 		fitLine(cv::Mat(points),line,CV_DIST_L12,0,0.01,0.01);  
+ 		//画一个线段  
+ 		int x0= line[2];  
+ 		int y0= line[3];  
+ 		int x1= x0-200*line[0];  
+ 		int y1= y0-200*line[1]; 
+ 		if(y0 == y1 /*|| x0 == x1*/)
+ 		{
+ 			cv::line(image,cv::Point(x0,y0),cv::Point(x1,y1),cv::Scalar(0,255,0),1); 	
+ 			imwrite("123.jpg",image);
+ 		}
+ 	}
+ 	imshow("估计的直线",image); 
 // 	//finder.drawDetectedLines (image);  
 
 // 	cv::namedWindow ("hough");  
