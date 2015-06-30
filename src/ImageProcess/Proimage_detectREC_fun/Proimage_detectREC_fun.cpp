@@ -159,7 +159,7 @@ void drawSquares( IplImage* img, CvSeq* squares )
 }  
 
 
-char* names[] = { "..\\..\\..\\source\\00_00_01_00.jpg", 0 };  
+char* names[] = { "..\\..\\..\\source\\a.jpg", 0 };  
 
 int main(int argc, char** argv)  
 {  

@@ -134,13 +134,13 @@ int _tmain(int argc, _TCHAR* argv[])
 						dst[0] = dst[1] = dst[2] = (uchar)0; // should not get here  
 					else  
 					{  
-						uchar* ptr = color_tab->data.ptr + (idx-1)*3;  
-						dst[0] = ptr[0]; dst[1] = ptr[1]; dst[2] = ptr[2];  
+// 						uchar* ptr = color_tab->data.ptr + (idx-1)*3;  
+// 						dst[0] = ptr[0]; dst[1] = ptr[1]; dst[2] = ptr[2];  
 					}  
 				}  
-
-				cvAddWeighted( wshed, 0.5, img_gray, 0.5, 0, wshed );  
-				cvShowImage( "watershed transform", wshed );  
+				cvShowImage( "watershed transform", wshed ); 
+				//cvAddWeighted( wshed, 0.5, img_gray, 0.5, 0, wshed );  
+				 
 				cvReleaseMemStorage( &storage );  
 				cvReleaseMat( &color_tab );  
 		}  
