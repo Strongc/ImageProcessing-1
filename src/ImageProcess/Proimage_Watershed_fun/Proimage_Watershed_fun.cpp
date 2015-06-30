@@ -121,7 +121,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				t = (double)cvGetTickCount() - t;  
 				printf( "exec time = %gms\n", t/(cvGetTickFrequency()*1000.) );  
 			}  
-
+			int xj = 0;
 			// paint the watershed image  
 			for( i = 0; i < markers->height; i++ )  
 				for( j = 0; j < markers->width; j++ )  
@@ -130,7 +130,7 @@ int _tmain(int argc, _TCHAR* argv[])
 					uchar* dst = &CV_IMAGE_ELEM( wshed, uchar, i, j*3 );  
 					if( idx == -1 )  
 						dst[0] = dst[1] = dst[2] = (uchar)255;  
-					else if( idx <= 0 || idx > comp_count )  
+					else if(/* idx <= 0 ||*/ idx > comp_count )  
 						dst[0] = dst[1] = dst[2] = (uchar)0; // should not get here  
 					else  
 					{  
