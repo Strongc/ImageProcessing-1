@@ -104,8 +104,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	float range_0[]={0,256};
 	float* ranges[] = { range_0 };
 
-	IplImage *src_image  = cvLoadImage( "3.jpg", 0 );
-	IplImage *src_image1 = cvLoadImage( "4.jpg", 0 );
+	IplImage *src_image  = cvLoadImage(  "..\\..\\..\\source\\123.jpg", 0 );
+	IplImage *src_image1 = cvLoadImage(  "..\\..\\..\\source\\1234.jpg", 0 );
 
 	if( !src_image )
 	{

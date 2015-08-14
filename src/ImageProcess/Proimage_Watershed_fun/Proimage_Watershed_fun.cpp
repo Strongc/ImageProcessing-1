@@ -41,7 +41,7 @@ void on_mouse( int event, int x, int y, int flags, void* param )
 int _tmain(int argc, _TCHAR* argv[])
 {
 	cout<<"input image name:  "<<endl;   
-	string file = "..\\..\\..\\source\\8.jpg";  
+	string file = "..\\..\\..\\source\\00_21_42_760.jpg";  
 
 
 	char* filename = (char *)file.c_str();  
@@ -96,7 +96,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			CvMat* color_tab;  
 			int i, j, comp_count = 0;  
 			//cvSaveImage( "wshed_mask.png", marker_mask );  
-			marker_mask = cvLoadImage( "wshed_mask.png", 0 );  
+			//marker_mask = cvLoadImage( "wshed_mask.png", 0 );  
 			cvFindContours( marker_mask, storage, &contours, sizeof(CvContour),  
 				CV_RETR_CCOMP, CV_CHAIN_APPROX_SIMPLE );  
 			cvZero( markers );  
